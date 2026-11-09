@@ -1,0 +1,205 @@
+Autonomous Campus Parking Management System (ACPMS) - FreeRTOS V11.1.0
+[00:00:00:001] PARKING_MONITORING - free=10/10 B01:- B02:- B03:- B04:- B05:- B06:- B07:- B08:- B09:
+[00:00:00:001] PARKING_MONITORING - 0 cars are waiting in line at the gate to accessible the parking lot.
+[00:00:00:001] ENTRY     vehicle=ABC123   bay= -1 action=Vehicle arrived at the gate, 0 ahead in line
+[00:00:01:001] PARKING_MONITORING - free=10/10 B01:- B02:- B03:- B04:- B05:- B06:- B07:- B08:- B09:
+[00:00:01:001] PARKING_MONITORING - 0 cars are waiting in line at the gate to accessible the parking lot.
+[00:00:01:001] ENTRY     vehicle=DEF456   bay= -1 action=Vehicle arrived at the gate, 1 ahead in line
+[00:00:02:001] PARKING_MONITORING - free=10/10 B01:- B02:- B03:- B04:- B05:- B06:- B07:- B08:- B09:
+[00:00:02:001] PARKING_MONITORING - 0 cars are waiting in line at the gate to accessible the parking lot.
+[00:00:02:001] ENTRY     vehicle=GHI789   bay= -1 action=Vehicle arrived at the gate, 2 ahead in line
+[00:00:03:001] PARKING_MONITORING - free=10/10 B01:- B02:- B03:- B04:- B05:- B06:- B07:- B08:- B09:
+[00:00:03:001] PARKING_MONITORING - 0 cars are waiting in line at the gate to accessible the parking lot.
+[00:00:03:001] ENTRY     vehicle=VIP002   bay= -1 action=Vehicle arrived at the gate, 0 ahead in line
+[00:00:03:001] VIP_DETECTED vehicle=VIP002   bay= -1 action=VIP permit detected, joined VIP line
+[00:00:03:001] BAY_ASSIGNED vehicle=VIP002   bay=  1 action=VIP PRIORITY - Allocated after 0 ms in queue, and ahead of 3 normal cars waiting
+[00:00:03:001] BAY_ASSIGNED vehicle=ABC123   bay=  2 action=Allocated after 3000 ms in queue
+[00:00:03:001] BAY_ASSIGNED vehicle=DEF456   bay=  3 action=Allocated after 2000 ms in queue
+[00:00:03:001] BAY_ASSIGNED vehicle=GHI789   bay=  4 action=Allocated after 1000 ms in queue
+[00:00:04:001] PARKING_MONITORING - free=6/10 B01:X B02:X B03:X B04:X B05:- B06:- B07:- B08:- B09:-
+[00:00:04:001] PARKING_MONITORING - 0 cars are waiting in line at the gate to accessible the parking lot.
+[00:00:04:001] ENTRY     vehicle=JKL012   bay= -1 action=Vehicle arrived at the gate, 0 ahead in line
+[00:00:05:001] PARKING_MONITORING - free=6/10 B01:X B02:X B03:X B04:X B05:- B06:- B07:- B08:- B09:-
+[00:00:05:001] PARKING_MONITORING - 0 cars are waiting in line at the gate to accessible the parking lot.
+[00:00:05:001] ENTRY     vehicle=MNO345   bay= -1 action=Vehicle arrived at the gate, 1 ahead in line
+[00:00:06:001] RELEASED  vehicle=VIP002   bay=  1 action=vehicle exited after 3000 ms, bay freed 1
+[00:00:06:001] RELEASED  vehicle=DEF456   bay=  3 action=vehicle exited after 3000 ms, bay freed 3
+[00:00:06:001] BAY_ASSIGNED vehicle=JKL012   bay=  1 action=Allocated after 2000 ms in queue
+[00:00:06:001] BAY_ASSIGNED vehicle=MNO345   bay=  3 action=Allocated after 1000 ms in queue
+[00:00:06:001] PARKING_MONITORING - free=6/10 B01:X B02:X B03:X B04:X B05:- B06:- B07:- B08:- B09:-
+[00:00:06:001] PARKING_MONITORING - 0 cars are waiting in line at the gate to accessible the parking lot.
+[00:00:06:001] ENTRY     vehicle=PQR678   bay= -1 action=Vehicle arrived at the gate, 0 ahead in line
+[00:00:07:001] RELEASED  vehicle=MNO345   bay=  3 action=vehicle exited after 1000 ms, bay freed 3
+[00:00:07:001] BAY_ASSIGNED vehicle=PQR678   bay=  3 action=Allocated after 1000 ms in queue
+[00:00:07:001] PARKING_MONITORING - free=6/10 B01:X B02:X B03:X B04:X B05:- B06:- B07:- B08:- B09:-
+[00:00:07:001] PARKING_MONITORING - 0 cars are waiting in line at the gate to accessible the parking lot.
+[00:00:07:001] ENTRY     vehicle=VIP007   bay= -1 action=Vehicle arrived at the gate, 0 ahead in line
+[00:00:07:001] VIP_DETECTED vehicle=VIP007   bay= -1 action=VIP permit detected, joined VIP line
+[00:00:07:001] BAY_ASSIGNED vehicle=VIP007   bay=  5 action=VIP PRIORITY - Allocated after 0 ms in queue, and ahead of 0 normal cars waiting
+[00:00:08:001] PARKING_MONITORING - free=5/10 B01:X B02:X B03:X B04:X B05:X B06:- B07:- B08:- B09:-
+[00:00:08:001] PARKING_MONITORING - 0 cars are waiting in line at the gate to accessible the parking lot.
+[00:00:08:001] ENTRY     vehicle=STU901   bay= -1 action=Vehicle arrived at the gate, 0 ahead in line
+[00:00:09:001] RELEASED  vehicle=ABC123   bay=  2 action=vehicle exited after 6000 ms, bay freed 2
+[00:00:09:001] BAY_ASSIGNED vehicle=STU901   bay=  2 action=Allocated after 1000 ms in queue
+[00:00:09:001] PARKING_MONITORING - free=5/10 B01:X B02:X B03:X B04:X B05:X B06:- B07:- B08:- B09:-
+[00:00:09:001] PARKING_MONITORING - 0 cars are waiting in line at the gate to accessible the parking lot.
+[00:00:09:001] ENTRY     vehicle=TTY909   bay= -1 action=Vehicle arrived at the gate, 0 ahead in line
+[00:00:10:001] PARKING_MONITORING - free=5/10 B01:X B02:X B03:X B04:X B05:X B06:- B07:- B08:- B09:-
+[00:00:10:001] PARKING_MONITORING - 0 cars are waiting in line at the gate to accessible the parking lot.
+[00:00:10:001] ENTRY     vehicle=SIS619   bay= -1 action=Vehicle arrived at the gate, 1 ahead in line
+[00:00:11:001] RELEASED  vehicle=JKL012   bay=  1 action=vehicle exited after 5000 ms, bay freed 1
+[00:00:11:001] BAY_ASSIGNED vehicle=TTY909   bay=  1 action=Allocated after 2000 ms in queue
+[00:00:11:001] BAY_ASSIGNED vehicle=SIS619   bay=  6 action=Allocated after 1000 ms in queue
+[00:00:11:001] PARKING_MONITORING - free=4/10 B01:X B02:X B03:X B04:X B05:X B06:X B07:- B08:- B09:-
+[00:00:11:001] PARKING_MONITORING - 0 cars are waiting in line at the gate to accessible the parking lot.
+[00:00:11:001] ENTRY     vehicle=LIF333   bay= -1 action=Vehicle arrived at the gate, 0 ahead in line
+[00:00:12:001] PARKING_MONITORING - free=4/10 B01:X B02:X B03:X B04:X B05:X B06:X B07:- B08:- B09:-
+[00:00:12:001] PARKING_MONITORING - 0 cars are waiting in line at the gate to accessible the parking lot.
+[00:00:12:001] ENTRY     vehicle=AIR902   bay= -1 action=Vehicle arrived at the gate, 1 ahead in line
+[00:00:13:001] RELEASED  vehicle=GHI789   bay=  4 action=vehicle exited after 10000 ms, bay freed 4
+[00:00:13:001] BAY_ASSIGNED vehicle=LIF333   bay=  4 action=Allocated after 2000 ms in queue
+[00:00:13:001] BAY_ASSIGNED vehicle=AIR902   bay=  7 action=Allocated after 1000 ms in queue
+[00:00:13:001] PARKING_MONITORING - free=3/10 B01:X B02:X B03:X B04:X B05:X B06:X B07:X B08:- B09:-
+[00:00:13:001] PARKING_MONITORING - 0 cars are waiting in line at the gate to accessible the parking lot.
+[00:00:13:001] ENTRY     vehicle=PLA444   bay= -1 action=Vehicle arrived at the gate, 0 ahead in line
+[00:00:13:501] RELEASED  vehicle=STU901   bay=  2 action=vehicle exited after 4500 ms, bay freed 2
+[00:00:13:501] BAY_ASSIGNED vehicle=PLA444   bay=  2 action=Allocated after 500 ms in queue
+[00:00:14:001] PARKING_MONITORING - free=3/10 B01:X B02:X B03:X B04:X B05:X B06:X B07:X B08:- B09:-
+[00:00:14:001] PARKING_MONITORING - 0 cars are waiting in line at the gate to accessible the parking lot.
+[00:00:14:001] ENTRY     vehicle=CAR007   bay= -1 action=Vehicle arrived at the gate, 0 ahead in line
+[00:00:15:001] RELEASED  vehicle=AIR902   bay=  7 action=vehicle exited after 2000 ms, bay freed 7
+[00:00:15:001] BAY_ASSIGNED vehicle=CAR007   bay=  7 action=Allocated after 1000 ms in queue
+[00:00:15:001] PARKING_MONITORING - free=3/10 B01:X B02:X B03:X B04:X B05:X B06:X B07:X B08:- B09:-
+[00:00:15:001] PARKING_MONITORING - 0 cars are waiting in line at the gate to accessible the parking lot.
+[00:00:15:001] ENTRY     vehicle=VIP001   bay= -1 action=Vehicle arrived at the gate, 0 ahead in line
+[00:00:15:001] VIP_DETECTED vehicle=VIP001   bay= -1 action=VIP permit detected, joined VIP line
+[00:00:15:001] BAY_ASSIGNED vehicle=VIP001   bay=  8 action=VIP PRIORITY - Allocated after 0 ms in queue, and ahead of 0 normal cars waiting
+[00:00:16:001] RELEASED  vehicle=PQR678   bay=  3 action=vehicle exited after 9000 ms, bay freed 3
+[00:00:16:001] RELEASED  vehicle=VIP007   bay=  5 action=vehicle exited after 9000 ms, bay freed 5
+[00:00:16:001] PARKING_MONITORING - free=4/10 B01:X B02:X B03:- B04:X B05:- B06:X B07:X B08:X B09:-
+[00:00:16:001] PARKING_MONITORING - 0 cars are waiting in line at the gate to accessible the parking lot.
+[00:00:16:001] SIMULATION_COMPLETE
+[00:00:17:001] RELEASED  vehicle=TTY909   bay=  1 action=vehicle exited after 6000 ms, bay freed 1
+[00:00:17:001] PARKING_MONITORING - free=5/10 B01:- B02:X B03:- B04:X B05:- B06:X B07:X B08:X B09:-
+[00:00:17:001] PARKING_MONITORING - 0 cars are waiting in line at the gate to accessible the parking lot.
+[00:00:18:001] RELEASED  vehicle=VIP001   bay=  8 action=vehicle exited after 3000 ms, bay freed 8
+[00:00:18:001] PARKING_MONITORING - free=6/10 B01:- B02:X B03:- B04:X B05:- B06:X B07:X B08:- B09:-
+[00:00:18:001] PARKING_MONITORING - 0 cars are waiting in line at the gate to accessible the parking lot.
+[00:00:19:001] RELEASED  vehicle=SIS619   bay=  6 action=vehicle exited after 8000 ms, bay freed 6
+[00:00:19:001] PARKING_MONITORING - free=7/10 B01:- B02:X B03:- B04:X B05:- B06:- B07:X B08:- B09:-
+[00:00:19:001] PARKING_MONITORING - 0 cars are waiting in line at the gate to accessible the parking lot.
+[00:00:20:001] PARKING_MONITORING - free=7/10 B01:- B02:X B03:- B04:X B05:- B06:- B07:X B08:- B09:-
+[00:00:20:001] PARKING_MONITORING - 0 cars are waiting in line at the gate to accessible the parking lot.
+[00:00:21:001] PARKING_MONITORING - free=7/10 B01:- B02:X B03:- B04:X B05:- B06:- B07:X B08:- B09:-
+[00:00:21:001] PARKING_MONITORING - 0 cars are waiting in line at the gate to accessible the parking lot.
+[00:00:22:001] PARKING_MONITORING - free=7/10 B01:- B02:X B03:- B04:X B05:- B06:- B07:X B08:- B09:-
+[00:00:22:001] PARKING_MONITORING - 0 cars are waiting in line at the gate to accessible the parking lot.
+[00:00:22:501] RELEASED  vehicle=PLA444   bay=  2 action=vehicle exited after 9000 ms, bay freed 2
+[00:00:23:001] RELEASED  vehicle=LIF333   bay=  4 action=vehicle exited after 10000 ms, bay freed 4
+[00:00:23:001] PARKING_MONITORING - free=9/10 B01:- B02:- B03:- B04:- B05:- B06:- B07:X B08:- B09:-
+[00:00:23:001] PARKING_MONITORING - 0 cars are waiting in line at the gate to accessible the parking lot.
+[00:00:24:001] PARKING_MONITORING - free=9/10 B01:- B02:- B03:- B04:- B05:- B06:- B07:X B08:- B09:-
+[00:00:24:001] PARKING_MONITORING - 0 cars are waiting in line at the gate to accessible the parking lot.
+[00:00:25:001] PARKING_MONITORING - free=9/10 B01:- B02:- B03:- B04:- B05:- B06:- B07:X B08:- B09:-
+[00:00:25:001] PARKING_MONITORING - 0 cars are waiting in line at the gate to accessible the parking lot.
+[00:00:26:001] PARKING_MONITORING - free=9/10 B01:- B02:- B03:- B04:- B05:- B06:- B07:X B08:- B09:-
+[00:00:26:001] PARKING_MONITORING - 0 cars are waiting in line at the gate to accessible the parking lot.
+[00:00:27:001] RELEASED  vehicle=CAR007   bay=  7 action=vehicle exited after 12000 ms, bay freed 7
+[00:00:27:001] PARKING_MONITORING - free=10/10 B01:- B02:- B03:- B04:- B05:- B06:- B07:- B08:- B09:
+[00:00:27:001] PARKING_MONITORING - 0 cars are waiting in line at the gate to accessible the parking lot.
+[00:00:28:001] PARKING_MONITORING - free=10/10 B01:- B02:- B03:- B04:- B05:- B06:- B07:- B08:- B09:
+[00:00:28:001] PARKING_MONITORING - 0 cars are waiting in line at the gate to accessible the parking lot.
+[00:00:29:001] PARKING_MONITORING - free=10/10 B01:- B02:- B03:- B04:- B05:- B06:- B07:- B08:- B09:
+[00:00:29:001] PARKING_MONITORING - 0 cars are waiting in line at the gate to accessible the parking lot.
+[00:00:30:001] PARKING_MONITORING - free=10/10 B01:- B02:- B03:- B04:- B05:- B06:- B07:- B08:- B09:
+[00:00:30:001] PARKING_MONITORING - 0 cars are waiting in line at the gate to accessible the parking lot.
+[00:00:31:001] PARKING_MONITORING - free=10/10 B01:- B02:- B03:- B04:- B05:- B06:- B07:- B08:- B09:
+[00:00:31:001] PARKING_MONITORING - 0 cars are waiting in line at the gate to accessible the parking lot.
+[00:00:32:001] PARKING_MONITORING - free=10/10 B01:- B02:- B03:- B04:- B05:- B06:- B07:- B08:- B09:
+[00:00:32:001] PARKING_MONITORING - 0 cars are waiting in line at the gate to accessible the parking lot.
+[00:00:33:001] PARKING_MONITORING - free=10/10 B01:- B02:- B03:- B04:- B05:- B06:- B07:- B08:- B09:
+[00:00:33:001] PARKING_MONITORING - 0 cars are waiting in line at the gate to accessible the parking lot.
+[00:00:34:001] PARKING_MONITORING - free=10/10 B01:- B02:- B03:- B04:- B05:- B06:- B07:- B08:- B09:
+[00:00:34:001] PARKING_MONITORING - 0 cars are waiting in line at the gate to accessible the parking lot.
+[00:00:35:001] PARKING_MONITORING - free=10/10 B01:- B02:- B03:- B04:- B05:- B06:- B07:- B08:- B09:
+[00:00:35:001] PARKING_MONITORING - 0 cars are waiting in line at the gate to accessible the parking lot.
+[00:00:36:001] PARKING_MONITORING - free=10/10 B01:- B02:- B03:- B04:- B05:- B06:- B07:- B08:- B09:
+[00:00:36:001] PARKING_MONITORING - 0 cars are waiting in line at the gate to accessible the parking lot.
+[00:00:37:001] PARKING_MONITORING - free=10/10 B01:- B02:- B03:- B04:- B05:- B06:- B07:- B08:- B09:
+[00:00:37:001] PARKING_MONITORING - 0 cars are waiting in line at the gate to accessible the parking lot.
+[00:00:38:001] PARKING_MONITORING - free=10/10 B01:- B02:- B03:- B04:- B05:- B06:- B07:- B08:- B09:
+[00:00:38:001] PARKING_MONITORING - 0 cars are waiting in line at the gate to accessible the parking lot.
+[00:00:39:001] PARKING_MONITORING - free=10/10 B01:- B02:- B03:- B04:- B05:- B06:- B07:- B08:- B09:
+[00:00:39:001] PARKING_MONITORING - 0 cars are waiting in line at the gate to accessible the parking lot.
+[00:00:40:001] PARKING_MONITORING - free=10/10 B01:- B02:- B03:- B04:- B05:- B06:- B07:- B08:- B09:
+[00:00:40:001] PARKING_MONITORING - 0 cars are waiting in line at the gate to accessible the parking lot.
+[00:00:41:001] PARKING_MONITORING - free=10/10 B01:- B02:- B03:- B04:- B05:- B06:- B07:- B08:- B09:
+[00:00:41:001] PARKING_MONITORING - 0 cars are waiting in line at the gate to accessible the parking lot.
+[00:00:42:001] PARKING_MONITORING - free=10/10 B01:- B02:- B03:- B04:- B05:- B06:- B07:- B08:- B09:
+[00:00:42:001] PARKING_MONITORING - 0 cars are waiting in line at the gate to accessible the parking lot.
+[00:00:43:001] PARKING_MONITORING - free=10/10 B01:- B02:- B03:- B04:- B05:- B06:- B07:- B08:- B09:
+[00:00:43:001] PARKING_MONITORING - 0 cars are waiting in line at the gate to accessible the parking lot.
+[00:00:44:001] PARKING_MONITORING - free=10/10 B01:- B02:- B03:- B04:- B05:- B06:- B07:- B08:- B09:
+[00:00:44:001] PARKING_MONITORING - 0 cars are waiting in line at the gate to accessible the parking lot.
+[00:00:45:001] PARKING_MONITORING - free=10/10 B01:- B02:- B03:- B04:- B05:- B06:- B07:- B08:- B09:
+[00:00:45:001] PARKING_MONITORING - 0 cars are waiting in line at the gate to accessible the parking lot.
+[00:00:46:001] PARKING_MONITORING - free=10/10 B01:- B02:- B03:- B04:- B05:- B06:- B07:- B08:- B09:
+[00:00:46:001] PARKING_MONITORING - 0 cars are waiting in line at the gate to accessible the parking lot.
+[00:00:47:001] PARKING_MONITORING - free=10/10 B01:- B02:- B03:- B04:- B05:- B06:- B07:- B08:- B09:
+[00:00:47:001] PARKING_MONITORING - 0 cars are waiting in line at the gate to accessible the parking lot.
+[00:00:48:001] PARKING_MONITORING - free=10/10 B01:- B02:- B03:- B04:- B05:- B06:- B07:- B08:- B09:
+[00:00:48:001] PARKING_MONITORING - 0 cars are waiting in line at the gate to accessible the parking lot.
+[00:00:49:001] PARKING_MONITORING - free=10/10 B01:- B02:- B03:- B04:- B05:- B06:- B07:- B08:- B09:
+[00:00:49:001] PARKING_MONITORING - 0 cars are waiting in line at the gate to accessible the parking lot.
+[00:00:50:001] PARKING_MONITORING - free=10/10 B01:- B02:- B03:- B04:- B05:- B06:- B07:- B08:- B09:
+[00:00:50:001] PARKING_MONITORING - 0 cars are waiting in line at the gate to accessible the parking lot.
+[00:00:51:001] PARKING_MONITORING - free=10/10 B01:- B02:- B03:- B04:- B05:- B06:- B07:- B08:- B09:
+[00:00:51:001] PARKING_MONITORING - 0 cars are waiting in line at the gate to accessible the parking lot.
+[00:00:52:001] PARKING_MONITORING - free=10/10 B01:- B02:- B03:- B04:- B05:- B06:- B07:- B08:- B09:
+[00:00:52:001] PARKING_MONITORING - 0 cars are waiting in line at the gate to accessible the parking lot.
+[00:00:53:001] PARKING_MONITORING - free=10/10 B01:- B02:- B03:- B04:- B05:- B06:- B07:- B08:- B09:
+[00:00:53:001] PARKING_MONITORING - 0 cars are waiting in line at the gate to accessible the parking lot.
+[00:00:54:001] PARKING_MONITORING - free=10/10 B01:- B02:- B03:- B04:- B05:- B06:- B07:- B08:- B09:
+[00:00:54:001] PARKING_MONITORING - 0 cars are waiting in line at the gate to accessible the parking lot.
+[00:00:55:001] PARKING_MONITORING - free=10/10 B01:- B02:- B03:- B04:- B05:- B06:- B07:- B08:- B09:
+[00:00:55:001] PARKING_MONITORING - 0 cars are waiting in line at the gate to accessible the parking lot.
+[00:00:56:001] PARKING_MONITORING - free=10/10 B01:- B02:- B03:- B04:- B05:- B06:- B07:- B08:- B09:
+[00:00:56:001] PARKING_MONITORING - 0 cars are waiting in line at the gate to accessible the parking lot.
+[00:00:57:001] PARKING_MONITORING - free=10/10 B01:- B02:- B03:- B04:- B05:- B06:- B07:- B08:- B09:
+[00:00:57:001] PARKING_MONITORING - 0 cars are waiting in line at the gate to accessible the parking lot.
+[00:00:58:001] PARKING_MONITORING - free=10/10 B01:- B02:- B03:- B04:- B05:- B06:- B07:- B08:- B09:
+[00:00:58:001] PARKING_MONITORING - 0 cars are waiting in line at the gate to accessible the parking lot.
+[00:00:59:001] PARKING_MONITORING - free=10/10 B01:- B02:- B03:- B04:- B05:- B06:- B07:- B08:- B09:
+[00:00:59:001] PARKING_MONITORING - 0 cars are waiting in line at the gate to accessible the parking lot.
+[00:01:00:001] PARKING_MONITORING - free=10/10 B01:- B02:- B03:- B04:- B05:- B06:- B07:- B08:- B09:
+[00:01:00:001] PARKING_MONITORING - 0 cars are waiting in line at the gate to accessible the parking lot.
+[00:01:01:001] PARKING_MONITORING - free=10/10 B01:- B02:- B03:- B04:- B05:- B06:- B07:- B08:- B09:
+[00:01:01:001] PARKING_MONITORING - 0 cars are waiting in line at the gate to accessible the parking lot.
+[00:01:02:001] PARKING_MONITORING - free=10/10 B01:- B02:- B03:- B04:- B05:- B06:- B07:- B08:- B09:
+[00:01:02:001] PARKING_MONITORING - 0 cars are waiting in line at the gate to accessible the parking lot.
+[00:01:03:001] PARKING_MONITORING - free=10/10 B01:- B02:- B03:- B04:- B05:- B06:- B07:- B08:- B09:
+[00:01:03:001] PARKING_MONITORING - 0 cars are waiting in line at the gate to accessible the parking lot.
+[00:01:04:001] PARKING_MONITORING - free=10/10 B01:- B02:- B03:- B04:- B05:- B06:- B07:- B08:- B09:
+[00:01:04:001] PARKING_MONITORING - 0 cars are waiting in line at the gate to accessible the parking lot.
+[00:01:05:001] PARKING_MONITORING - free=10/10 B01:- B02:- B03:- B04:- B05:- B06:- B07:- B08:- B09:
+[00:01:05:001] PARKING_MONITORING - 0 cars are waiting in line at the gate to accessible the parking lot.
+[00:01:06:001] PARKING_MONITORING - free=10/10 B01:- B02:- B03:- B04:- B05:- B06:- B07:- B08:- B09:
+[00:01:06:001] PARKING_MONITORING - 0 cars are waiting in line at the gate to accessible the parking lot.
+[00:01:07:001] PARKING_MONITORING - free=10/10 B01:- B02:- B03:- B04:- B05:- B06:- B07:- B08:- B09:
+[00:01:07:001] PARKING_MONITORING - 0 cars are waiting in line at the gate to accessible the parking lot.
+[00:01:08:001] PARKING_MONITORING - free=10/10 B01:- B02:- B03:- B04:- B05:- B06:- B07:- B08:- B09:
+[00:01:08:001] PARKING_MONITORING - 0 cars are waiting in line at the gate to accessible the parking lot.
+[00:01:09:001] PARKING_MONITORING - free=10/10 B01:- B02:- B03:- B04:- B05:- B06:- B07:- B08:- B09:
+[00:01:09:001] PARKING_MONITORING - 0 cars are waiting in line at the gate to accessible the parking lot.
+[00:01:10:001] PARKING_MONITORING - free=10/10 B01:- B02:- B03:- B04:- B05:- B06:- B07:- B08:- B09:
+[00:01:10:001] PARKING_MONITORING - 0 cars are waiting in line at the gate to accessible the parking lot.
+[00:01:11:001] PARKING_MONITORING - free=10/10 B01:- B02:- B03:- B04:- B05:- B06:- B07:- B08:- B09:
+[00:01:11:001] PARKING_MONITORING - 0 cars are waiting in line at the gate to accessible the parking lot.
+[00:01:12:001] PARKING_MONITORING - free=10/10 B01:- B02:- B03:- B04:- B05:- B06:- B07:- B08:- B09:
+[00:01:12:001] PARKING_MONITORING - 0 cars are waiting in line at the gate to accessible the parking lot.
+[00:01:13:001] PARKING_MONITORING - free=10/10 B01:- B02:- B03:- B04:- B05:- B06:- B07:- B08:- B09:
+[00:01:13:001] PARKING_MONITORING - 0 cars are waiting in line at the gate to accessible the parking lot.
+[00:01:14:001] PARKING_MONITORING - free=10/10 B01:- B02:- B03:- B04:- B05:- B06:- B07:- B08:- B09:
+[00:01:14:001] PARKING_MONITORING - 0 cars are waiting in line at the gate to accessible the parking lot.
+[00:01:15:001] PARKING_MONITORING - free=10/10 B01:- B02:- B03:- B04:- B05:- B06:- B07:- B08:- B09:
+[00:01:15:001] PARKING_MONITORING - 0 cars are waiting in line at the gate to accessible the parking lot.
